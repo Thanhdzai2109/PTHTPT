@@ -34,7 +34,7 @@ public class ProductGetByWhereAPI extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		resp.setContentType("application/json");
 		String[] arrs = pathInfor.split("/");
-		System.out.println(arrs[arrs.length - 1]);
+//		System.out.println(arrs[arrs.length - 1]);
 		String kt = arrs[arrs.length - 1];
 		try{
 			int maDanhMuc = Integer.parseInt(kt);

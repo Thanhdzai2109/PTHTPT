@@ -25,12 +25,14 @@ public class AddTaiKhoan extends HttpServlet{
 		TaiKhoanDAO dao=new TaiKhoanDAOImpl();
 		String url="/admin/taikhoan";
 		TaiKhoan tk=new TaiKhoan();
+                System.out.println(name);
 		tk.setTen_tai_khoan(name);
 		if(dao.checkUser(name)==false){
 			tk.setMat_khau(mk);
 			tk.setQuyen_truy_cap(2);
 			tk.setTinh_trang(0);
 			dao.AddUser(tk);
+                        req.setAttribute("SUSSESS","Thêm m?i thành công");
 		}else{
 			req.setAttribute("error","them khong thanh cong ten tk da ton tai");
 			url="/admin/addTaiKhoan.jsp";

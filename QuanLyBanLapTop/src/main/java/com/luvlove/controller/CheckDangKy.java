@@ -24,11 +24,12 @@ public class CheckDangKy extends HttpServlet{
 		String email=req.getParameter("email");
 		String matkhau=req.getParameter("matkhau");
 		if(taikhoan.checkUser(email)==true) {
-			 req.setAttribute("error","Tên Đăng Kí Đã Tồn Tại");
+			 req.setAttribute("error","Tên �?ăng Kí �?ã Tồn Tại");
 			 url="/dangky.jsp";
 		}else{
 			TaiKhoan tk=new TaiKhoan(4, email, hoten, matkhau, 2, 0);
 			taikhoan.AddUser(tk);
+                        System.out.println(tk);
 			 url="/dangnhap.jsp";
 		}
 				
