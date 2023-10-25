@@ -11,7 +11,7 @@ public class DBConnect {
 //			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 //			cons = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=shop", "sa", "1234");
 //                        System.out.println("Thành công");
-            String url = "jdbc:sqlserver://localhost:1433;databaseName=shop;useUnicode=true;characterEncoding=UTF-8";
+            String url = "jdbc:sqlserver://localhost:1433;databaseName=shop;characterEncoding=UTF-8";
             String user = "sa";
             String password = "1234";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
