@@ -154,7 +154,7 @@ public class DanhMucDAOImpl implements DanhMucDAO{
 	public boolean addDanhMuc(String name) {
 		Connection cons = DBConnect.getConnecttion();
 //		StringBuilder sql = new StringBuilder("INSERT INTO danh_muc(ma_danh_muc,ten_danh_muc) values('0','"+name+"')");
-                 StringBuilder sql = new StringBuilder("INSERT INTO danh_muc(ten_danh_muc) values('"+name+"')");
+                 StringBuilder sql = new StringBuilder("INSERT INTO danh_muc(danh_muc_cha,ten_danh_muc) values('1','"+name+"')");
 		try {
 			PreparedStatement statement = cons.prepareStatement(sql.toString());
 			int i=statement.executeUpdate();

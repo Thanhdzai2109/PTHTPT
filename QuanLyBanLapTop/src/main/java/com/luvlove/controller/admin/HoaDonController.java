@@ -22,8 +22,8 @@ public class HoaDonController extends HttpServlet{
 			HoaDonDAO dao=new HoaDonDAOImpl();
 			list=dao.getListHD();
 			req.setAttribute("listhoadon", list);
-			System.out.println(list.get(0).getMataikhoan());
-			System.out.println(list.get(0).getTensp());
+//			System.out.println(list.get(0).getMataikhoan());
+//			System.out.println(list.get(0).getTensp());
 			RequestDispatcher rd = req.getRequestDispatcher("/admin/qlHoaDon.jsp");
 			rd.forward(req, resp);
 		}
