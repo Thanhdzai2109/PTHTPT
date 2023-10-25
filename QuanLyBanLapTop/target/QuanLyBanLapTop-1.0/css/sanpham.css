@@ -1,0 +1,221 @@
+/*css header*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.header .topbar {
+    background: #80BB35;
+    color: #FFFFFF;
+    height: 40px;
+	padding: 10px
+}
+.topbar a {
+    color: #FFFFFF;
+    font-weight: 600
+}
+.text-left span a{
+	text-decoration: none
+}
+@media (max-width: 767px) {
+  .dienthoai{
+    display: none
+	}
+}
+.anh-logo{
+	margin-top: 40px
+}
+.anh-logo p{
+	float: right;
+	margin: 20px 50px;
+	color: #ffff;
+	background: #FE9705;
+	border-radius: 15px;
+	padding: 15px 40px;
+}
+.anh-logo p i{
+	margin-right: 10px;
+}
+/*css main*/
+.menu{
+	background: #80BB35 !important;
+	margin-top: 15px;
+}
+/* .menu ul li{
+	display: inline-block;
+} */
+.menu ul li a{
+	color: #ffff !important;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center
+}
+.menu ul li:hover {
+	background: #FE9705;
+}
+
+.box{
+	background: #ffff;
+	border-radius: 15px;
+	margin: 10px 136px;
+}
+.box input{
+	border: none;
+	padding-left: 10px;
+	border-radius: 15px;
+	height: 30px
+}
+.box i{
+	padding-right: 10px;
+	color: black
+}
+.box input:focus{
+	outline:0;
+}
+.banner{
+	margin-top: 30px;
+}
+.dmuc-sp i{
+	margin-right: 10px;
+}
+.dmuc-sp{
+	border: 1px solid #bfbfbf;
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+.conten-dmuc-sp{
+	margin-left: 30px;
+}
+.conten-dmuc-sp h5{
+	margin-bottom: 20px;
+}
+
+.sapxep{
+	float: right
+}
+.sapxep select{
+	border-radius: 15px;
+	height: 30px;
+	margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .sapxep{
+	margin-top: -40px
+	}
+}
+.abc{
+	margin-top: 60px;
+}
+.dmuc-sp p{
+	background: #80BB35;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffff;
+	border-radius: 15px;
+	padding: 10px 10px 10px 30px;
+	margin-bottom: 20px;
+	text-align: left;
+	text-align: center
+}
+.item1{
+	border: 1px solid #bfbfbf;
+	border-radius: 15px;
+}
+.item1 img{
+	height: 100%;
+	width: 80%;
+	margin: 0 auto; 
+	display: block
+}
+.item1-conten{
+	text-align: center;
+	margin-top: 20px;
+}
+/* .item1-conten p{
+	font-size: 18px
+} */
+.item1-conten h5{
+	color: #FE9705;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.item1-conten p{
+	color: #80BB35;
+	border: 1px solid #80BB35; 
+	text-align: center;
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.phan-trang{
+	margin-left: 50%
+}
+/*css footer*/
+.footer{
+	background: #008000;
+	height: 300px;
+	margin-top: 20px;
+	color: #fff
+}
+.spham{
+	margin-top: 40px;
+}
+.item1{
+	margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+ .footer{
+ 	height: 800px
+ }
+}
+.footer i{
+	padding-right: 10px;
+	font-size: 20px
+}
+.footer h5{
+	font-size: 16px;
+	margin-top: 30px;
+}
+.menu-footer ul li a{
+	color: #fff;
+}
+.menu-footer ul li{
+	margin-top: 30px;
+	font-size: 16px
+}
+.menu-footer{
+	margin-left: 80px;
+}
+.conten-footer{
+	margin-top: 20px;
+}
+.conten-footer h5 i{
+	color: #FE9705;
+}
+.anh-footer img{
+	height: 250px;
+	width: 100%
+}
+#myBtn {
+  display: none; /* Mặc định button sẽ được ẩn*/
+  position: fixed;
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+.fixed{
+	position: fixed;
+	z-index: 1000;
+	top: -25px;
+	width: 100%
+}

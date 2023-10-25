@@ -1,0 +1,219 @@
+/*css header*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.header .topbar {
+    background: #80BB35;
+    color: #FFFFFF;
+    height: 40px;
+	padding: 10px
+}
+.topbar a {
+    color: #FFFFFF;
+    font-weight: 600
+}
+.anh-logo{
+	margin-top: 40px
+}
+.anh-logo p{
+	float: right;
+	margin: 20px 150px;
+	color: #ffff;
+	background: #FE9705;
+	border-radius: 15px;
+	padding: 15px 40px;
+}
+.anh-logo p i{
+	margin-right: 10px;
+}
+/*css main*/
+.menu{
+	background: #80BB35;
+	padding-left: 60px;
+	margin-top: 25px;
+}
+.menu ul li{
+	display: inline-block;
+	padding: 10px 20px;
+}
+.menu ul li a{
+	color: #ffff;
+	font-size: 16px;
+	text-decoration: none
+}
+.menu ul li:hover {
+	background: #FE9705;
+}
+.box{
+	background: #ffff;
+	float: right;
+	margin: 10px 200px;
+	border-radius: 15px;
+}
+.box input{
+	border: none;
+	padding-left: 10px;
+	border-radius: 15px;
+}
+.box i{
+	padding-right: 10px;
+	color: black
+}
+.chitiet img{
+	width: 100%
+}
+.sp span{
+	background:#80BB35;
+	color: #ffff;
+	padding: 5px
+}
+.sp h3{
+	color: #FE9705;
+	font-weight: bold
+}
+.sp{
+	border-bottom: 1px solid #bfbfbf;
+	padding-bottom: 10px
+}
+.conten-sp{
+	color: #898989;
+	margin-top: 20px;
+	border-bottom: 1px solid #bfbfbf;
+	padding-bottom: 10px
+}
+.chitiet button{
+	background: #80BB35;
+	color: #ffff;
+	border-radius: 5px;
+	border: 1px solid #bfbfbf;
+	padding: 10px;
+	margin-top: 20px
+}
+.mota h4{
+	background:#FE9705;
+	color: #ffff;
+	width: 100px;
+	padding: 10px 25px;
+	border-radius: 5px
+}
+.conten-mota{
+	border: 1px solid #bfbfbf;
+	padding: 20px 30px;
+	color: #898989;
+}
+.sp-lienquan{
+	margin-top: 30px;
+
+}
+.conten-sp-lienquan hr{
+  color: #FE9705;
+  background: #FE9705;
+  border: 0;
+  height: 3px;
+  position: relative
+}
+.conten-sp-lienquan h4{
+	background: #80BB35;
+	width: 250px;
+	height: 40px;
+	margin-left: 37%;
+	border-radius: 15px;
+	padding: 10px 35px ;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	margin-top: -44px;
+
+}
+.splq{
+	margin-top: 20px
+}
+.item1{
+	border: 1px solid #bfbfbf;
+	border-radius: 15px;
+	width: 250px
+}
+.item1 img{
+	height: 200px;
+	width: 200px;
+	margin: 0 auto; 
+	display: block
+}
+.item1-conten{
+	text-align: center;
+	margin-top: 20px;
+}
+.item1-conten h5{
+	color: #FE9705;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.item1-conten p{
+	color: #80BB35;
+	border: 1px solid #80BB35; 
+	text-align: center;
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+/*css footer*/
+.footer{
+	background: #008000;
+	height: 300px;
+	margin-top: 20px;
+	color: #fff
+}
+.footer i{
+	padding-right: 10px;
+	font-size: 20px
+}
+.footer h5{
+	font-size: 16px;
+	margin-top: 30px;
+}
+.menu-footer ul li a{
+	color: #fff;
+}
+.menu-footer ul li{
+	margin-top: 30px;
+	font-size: 16px
+}
+.menu-footer{
+	margin-left: 80px;
+}
+.conten-footer{
+	margin-top: 20px;
+}
+.conten-footer h5 i{
+	color: #FE9705;
+}
+.anh-footer img{
+	height: 250px;
+	width: 100%
+}
+#myBtn {
+  display: none; /* Mặc định button sẽ được ẩn*/
+  position: fixed;
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+.fixed{
+	position: fixed;
+	z-index: 1000;
+	top: -25px;
+	width: 100%
+}

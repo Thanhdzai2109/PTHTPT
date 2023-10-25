@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+	<display-name>QuanLyBanLapTop</display-name>
+	<servlet>
+		<servlet-name>GioHangServlet</servlet-name>
+		<servlet-class>com.luvlove.controller.GioHangServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LichsuServerlet</servlet-name>
+		<servlet-class>com.luvlove.controller.LichsuServerlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MailApp</servlet-name>
+		<servlet-class>com.luvlove.controller.MailApp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GioHangServlet</servlet-name>
+		<url-pattern>/GioHangServlet</url-pattern>
+	</servlet-mapping>
+	<!-- Dang Ky -->
+	<servlet>
+		<servlet-name>DangKy</servlet-name>
+		<servlet-class>com.luvlove.controller.DangKy</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DangKy</servlet-name>
+		<url-pattern>/DangKy</url-pattern>
+	</servlet-mapping>
+	<!-- Check Dang Ky -->
+	<servlet>
+		<servlet-name>CheckDangKy</servlet-name>
+		<servlet-class>com.luvlove.controller.CheckDangKy</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckDangKy</servlet-name>
+		<url-pattern>/CheckDangKy</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<!-- Tim kiem -->
+		<servlet-name>TimKiem</servlet-name>
+		<servlet-class>com.luvlove.controller.TimKiem</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TimKiem</servlet-name>
+		<url-pattern>/TimKiem</url-pattern>
+	</servlet-mapping>
+	<!-- DangNhap -->
+	<servlet>
+		<servlet-name>DangNhap</servlet-name>
+		<servlet-class>com.luvlove.controller.DangNhap</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DangNhap</servlet-name>
+		<url-pattern>/DangNhap</url-pattern>
+	</servlet-mapping>
+	<!-- Logout -->
+	<servlet>
+		<servlet-name>DangXuat</servlet-name>
+		<servlet-class>com.luvlove.controller.DangXuat</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DangXuat</servlet-name>
+		<url-pattern>/DangXuat</url-pattern>
+	</servlet-mapping>
+	<!-- ThanhToan -->
+	<servlet>
+		<servlet-name>ThanhToanServlet</servlet-name>
+		<servlet-class>com.luvlove.controller.ThanhToanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ThanhToanServlet</servlet-name>
+		<url-pattern>/ThanhToanServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LichsuServerlet</servlet-name>
+		<url-pattern>/LichsuServerlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MailApp</servlet-name>
+		<servlet-class>com.luvlove.controller.MailApp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MailApp</servlet-name>
+		<url-pattern>/MailApp</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>trangchu.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
