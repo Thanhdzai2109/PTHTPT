@@ -118,7 +118,7 @@ pageEncoding="UTF-8"%>
 </div>
     <thead>
       <tr>
-        <th style="text-align: center;font-style: bold; padding: 5px;">Mã Sản Phẩm</th>
+        <th style="text-align: center;font-style: bold; padding: 5px;">STT</th>
         <th style="text-align: center;font-style: bold;padding: 5px;">Tên Sản Phẩm</th>
         <th style="text-align: center;font-style: bold;padding: 5px;">Danh Mục</th>
         <th style="text-align: center;font-style: bold;padding: 5px;">Hình Ảnh</th>
@@ -128,9 +128,9 @@ pageEncoding="UTF-8"%>
       </tr>
     </thead>
     <tbody>
-    <c:forEach var="item" items="${list}">
-      <tr>
-          <td style="text-align: center;">${item.ma_san_pham}</td>
+    <c:forEach var="item" items="${list}" varStatus="status">
+      <tr   id="row_${status.index}" >
+          <td style="text-align: center;">${status.index+1}</td>
           <td style="text-align: center;">${item.ten_san_pham}</td>
           <td style="text-align: center;">${item.don_gia}</td>
           <td><img alt="" src="/QuanLyBanLapTop${item.hinh_anh}" style="width:200px;height:200px;"></td>

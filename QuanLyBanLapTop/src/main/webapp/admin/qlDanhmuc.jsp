@@ -115,15 +115,15 @@ pageEncoding="UTF-8"%>
 </div>
     <thead>
       <tr>
-        <th style="text-align: center;font-style: bold; padding: 5px;">Mã danh mục</th>
+        <th style="text-align: center;font-style: bold; padding: 5px;">STT</th>
         <th style="text-align: center;font-style: bold;padding: 5px;">Tên danh mục</th>
         <th colspan="3" style="text-align: center;">Tùy chọn</th>
       </tr>
     </thead>
     <tbody>
-    <c:forEach var="item" items="${dm}">
-      <tr>
-          <td style="text-align: center;">${item.ma_danh_muc}</td>
+    <c:forEach var="item" items="${dm}" varStatus="status">
+      <tr id="row_${status.index}">
+          <td style="text-align: center;">${status.index+1}</td>
           <td style="text-align: center;">${item.ten_danh_muc}</td>
           <td><a href="../admin/editDanhMuc?maDanhMuc=${item.ma_danh_muc}" style="background: green;text-decoration: none;margin: 10px;">Sửa</a></td>
           <td> <a href="../admin/deleteDanhMuc?maDanhMuc=${item.ma_danh_muc}" style="background:red;text-decoration: none;margin: 10px;">Xóa</a></td>
