@@ -44,12 +44,14 @@ public class ThanhToanServlet extends HttpServlet{
     		Date date=new Date();
     		String mhd=""+date.getTime();
 			HoaDon hd=new HoaDon(mhd, tk, dia_chi, hinh_thuc_thanh_toan, new Timestamp(new Date().getTime()), 0,dien_thoai);
+                        System.out.println(hd.getMa_hoa_don());
 			dao.themHoaDon(hd);
 			TreeMap<SanPham,Integer> list=cart.getList();
 			for(Map.Entry<SanPham,Integer> ds : list.entrySet()){
 				SanPham sp=new SanPham();
 				sp.setMa_san_pham(ds.getKey().getMa_san_pham());
 				cthd.themChiTietHD(new ChiTietHoaDon(0, hd, sp, ds.getValue(), ds.getKey().getDon_gia(), ds.getKey().getGiam_gia()));
+                               
 			}
 			System.out.println("Success");
 			

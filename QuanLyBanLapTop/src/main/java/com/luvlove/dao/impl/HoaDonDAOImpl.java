@@ -18,7 +18,7 @@ public class HoaDonDAOImpl implements HoaDonDAO{
 	@Override
 	public void themHoaDon(HoaDon hd) {
 		Connection cnn=DBConnect.getConnecttion();
-		String sql="INSERT INTO hoa_don value (?,?,?,?,?,?,?)";
+		String sql="INSERT INTO hoa_don values (?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement ps=cnn.prepareStatement(sql);
 			ps.setString(1, hd.getMa_hoa_don());

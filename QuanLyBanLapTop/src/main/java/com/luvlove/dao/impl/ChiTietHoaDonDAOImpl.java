@@ -12,10 +12,11 @@ public class ChiTietHoaDonDAOImpl implements ChiTietHoaDonDAO{
 	@Override
 	public void themChiTietHD(ChiTietHoaDon chitiet) {
 		Connection cnn=DBConnect.getConnecttion();
-		String sql="INSERT INTO chi_tiet_hoa_don value (?,?,?,?,?,?)";
+		String sql="INSERT INTO chi_tiet_hoa_don values (?,?,?,?,?,?)";
 		try {
 			PreparedStatement ps=cnn.prepareStatement(sql);
 			ps.setInt(1, chitiet.getMa_chi_tiet_hoa());
+                        System.out.println(chitiet.getMa_chi_tiet_hoa());
 			ps.setString(2, chitiet.getHoa_don().getMa_hoa_don());
 			ps.setInt(3,chitiet.getSan_pham().getMa_san_pham());
 			ps.setInt(4, chitiet.getSo_luong());
